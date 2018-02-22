@@ -6,6 +6,7 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.slf4j.LoggerFactory;
+import org.slf4j.bridge.SLF4JBridgeHandler;
 
 /**
  * Thanks for watching this episode! Send any feedback to info@marcobehler.com!
@@ -22,6 +23,8 @@ public class MyCrazyLoggingApp {
         log4j2Logger.info("Log4j v2 logger here!!!!");
 
         // Java Util Logging (JUL)
+        SLF4JBridgeHandler.removeHandlersForRootLogger();
+        SLF4JBridgeHandler.install();
         java.util.logging.Logger julLogger = java.util.logging.Logger.getLogger(MyCrazyLoggingApp.class.getName());
         julLogger.info("JUL IS IN THE HOUSE!!!");
 
@@ -30,10 +33,10 @@ public class MyCrazyLoggingApp {
         jclLog.info("GO AWAY, ALL THE WAY JCL!");
 
 
-        // Slf4j + Slf4j-Simple Binding
+        // Slf4j + Logback
         org.slf4j.Logger logger = LoggerFactory.getLogger(MyCrazyLoggingApp.class);
         logger.info("Slf4j to rule them all!!");
 
-        // Slf4j + Logback? Next episode...
+
     }
 }
