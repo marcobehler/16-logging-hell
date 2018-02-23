@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bitcoin-miner" />
+        <module name="wealth-management" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bitcoin-miner" target="1.8" />
+      <module name="logging-multiple-parent" target="1.8" />
+      <module name="wealth-management" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
