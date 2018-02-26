@@ -5,7 +5,7 @@
   <artifactId>logging-multiple-parent</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>o</name>
+  <name>logging-multiple-parent</name>
   <modules>
     <module>wealth-management</module>
     <module>bitcoin-miner</module>
@@ -23,6 +23,13 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.8.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.25</version>
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>
