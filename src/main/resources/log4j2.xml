@@ -11,7 +11,6 @@
     <!-- <appname>.<instance-name>.YYYYMMDD.status.log -->
     <!-- <appname>.<instance-name>.YYYYMMDD-HH.trace.log -->
 
-
     <Loggers>
         <Logger name="com.marcobehler.logging.detailed.SomeOtherClass" level="debug"/>
 
