@@ -5,6 +5,13 @@
             <PatternLayout pattern="--log4j2--- %d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
     </Appenders>
+
+    <!-- Examples of logfile naming -->
+    <!-- <appname>.<instance-name>.YYYYMMDD.error.log -->
+    <!-- <appname>.<instance-name>.YYYYMMDD.status.log -->
+    <!-- <appname>.<instance-name>.YYYYMMDD-HH.trace.log -->
+
+
     <Loggers>
         <Logger name="com.marcobehler.logging.detailed.SomeOtherClass" level="debug"/>
 
