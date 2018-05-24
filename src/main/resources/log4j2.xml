@@ -4,10 +4,35 @@
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="--log4j2--- %d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
+
+        <!-- YYYYMMDD.error.log -->
+        <RollingFile name="ErrorLog" fileName="error.log"
+                     filePattern="%d{yyyyMMdd}.error.%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="1 KB"/>
+            </Policies>
+            <Filters>
+                <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+                <!-- what about warn message -->
+            </Filters>
+        </RollingFile>
+
+        <SMTP name="Mail" subject="Error Log" to="errors@logging.apache.org" from="test@logging.apache.org"
+              smtpHost="localhost" smtpPort="25" bufferSize="50">
+        </SMTP>
     </Appenders>
+
+    <!-- TODO statusLog -->
 
     <!-- Examples of logfile naming -->
     <!-- <appname>.<instance-name>.YYYYMMDD.error.log -->
+
+    <!-- YYYYMMDD.status.log -->
+
     <!-- <appname>.<instance-name>.YYYYMMDD.status.log -->
     <!-- <appname>.<instance-name>.YYYYMMDD-HH.trace.log -->
 
@@ -16,6 +41,7 @@
 
         <Root level="info">
             <AppenderRef ref="Console"/>
+            <!--<AppenderRef ref="ErrorLog"/>-->
         </Root>
     </Loggers>
 </Configuration>
