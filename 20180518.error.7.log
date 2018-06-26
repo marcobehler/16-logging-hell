@@ -1,0 +1,8 @@
+2018-05-18 11:21:20,304 ERROR c.m.l.d.SomeOtherClass [main]  a request that was aborted and needs human intervention ASAP
+2018-05-18 11:21:20,327 ERROR c.m.l.d.SomeOtherClass [main] Missing value for property  'jdbc.url'. Add propertyto application.properties/database table/network config server
+2018-05-18 11:21:20,327 ERROR c.m.l.d.SomeOtherClass [main]  a request that was aborted and needs human intervention ASAP
+2018-05-18 11:21:20,338 ERROR c.m.l.d.SomeOtherClass [main] Missing value for property  'jdbc.url'. Add propertyto application.properties/database table/network config server
+2018-05-18 11:21:20,338 ERROR c.m.l.d.SomeOtherClass [main]  a request that was aborted and needs human intervention ASAP
+2018-05-18 11:21:20,349 ERROR c.m.l.d.SomeOtherClass [main] Missing value for property  'jdbc.url'. Add propertyto application.properties/database table/network config server
+2018-05-18 11:21:20,349 ERROR c.m.l.d.SomeOtherClass [main]  a request that was aborted and needs human intervention ASAP
+2018-05-18 11:21:20,360 ERROR c.m.l.d.SomeOtherClass [main] Missing value for property  'jdbc.url'. Add propertyto application.properties/database table/network config server
